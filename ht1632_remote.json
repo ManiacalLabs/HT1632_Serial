@@ -1,0 +1,68 @@
+{
+    "animation": {
+        "title": "Infinity Mirror",
+        "typename": "remote",
+        "animations": [
+            {
+                "animation": {
+                    "typename": "BiblioPixelAnimations.matrix.Text.ScrollText",
+                    "name": "Scroll",
+                    "text": "HT1632 Demo",
+                    "color": "red"
+                },
+                "run": {
+                    "fps": 20,
+                    "amt": 1
+                }
+            },
+            {
+                "animation": {
+                    "typename": "BiblioPixelAnimations.matrix.GameOfLife.GameOfLife",
+                    "name": "Game Of Life"
+                },
+                "run": {
+                    "fps": 20
+                }
+            },
+            {
+                "animation": {
+                    "typename": "BiblioPixelAnimations.matrix.perlin_simplex.PerlinSimplex",
+                    "name": "Noise"
+                },
+                "run": {
+                    "fps": 20
+                }
+            },
+            {
+                "animation": {
+                    "typename": "BiblioPixelAnimations.matrix.Mainframe.Mainframe",
+                    "name": "MainFrame"
+                },
+                "run": {
+                    "fps": 20
+                }
+            }
+        ],
+        "default": "Scroll",
+        "bgcolor": "black",
+        "external_access": true,
+        "port": 5000
+    },
+    "driver": {
+        "typename": "HTSerial.driver.Serial",
+        "hardwareID": "0403:6001",
+        "baudrate": 1000000,
+        "ledtype": "GENERIC",
+        "num": 1024
+    },
+    "layout": {
+        "typename": "matrix",
+        "rotation": 3,
+        "vert_flip": false,
+        "serpentine": false,
+        "width": 8,
+        "height": 128,
+        "brightness": 255,
+        "threadedUpdate": true
+    }
+}

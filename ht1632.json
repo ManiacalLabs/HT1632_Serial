@@ -1,0 +1,25 @@
+{
+    "animation": {
+        "typename": "HTTest.Test"
+    },
+    "run": {
+        "fps": 4
+    },
+    "driver": {
+        "typename": "HTSerial.driver.Serial",
+        "hardwareID": "0403:6001",
+        "baudrate": 1000000,
+        "ledtype": "GENERIC",
+        "num": 1024
+    },
+    "layout": {
+        "typename": "matrix",
+        "rotation": 3,
+        "vert_flip": false,
+        "serpentine": false,
+        "width": 8,
+        "height": 128,
+        "brightness": 255,
+        "threadedUpdate": true
+    }
+}
